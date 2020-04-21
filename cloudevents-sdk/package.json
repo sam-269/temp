@@ -1,0 +1,83 @@
+{
+  "_from": "cloudevents-sdk",
+  "_id": "cloudevents-sdk@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YviL6+jQ4aeNJBqLtHchjcNab8BgK4mgpaIexqmP1p5qQrhAWMrQEVdDSQfo0NLqeJg1zTRYGFM1O6/IP4RZkg==",
+  "_location": "/cloudevents-sdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cloudevents-sdk",
+    "name": "cloudevents-sdk",
+    "escapedName": "cloudevents-sdk",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cloudevents-sdk/-/cloudevents-sdk-1.0.0.tgz",
+  "_shasum": "b52c4383979c0c41c1d88aac1a84620db115b0be",
+  "_spec": "cloudevents-sdk",
+  "_where": "C:\\Users\\LENOVO\\Desktop\\Angular\\Workspace",
+  "author": {
+    "name": "cloudevents.io"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudevents/sdk-javascript/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": {
+    "name": "Fábio José de Moraes",
+    "email": "fabiojose@gmail.com",
+    "url": "https://github.com/fabiojose"
+  },
+  "dependencies": {
+    "ajv": "^6.7.0",
+    "axios": "0.18.1",
+    "is-empty": "1.2.0",
+    "uri-js": "4.2.2",
+    "uuid": "3.3.2"
+  },
+  "deprecated": false,
+  "description": "CloudEvents SDK for JavaScript",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.2.0",
+    "codacy-coverage": "3.3.0",
+    "cucumber": "^5.1.0",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "mocha-lcov-reporter": "1.3.0",
+    "nock": "10.0.2",
+    "request": "^2.88.0",
+    "typescript": "^3.6.4"
+  },
+  "homepage": "https://github.com/cloudevents/sdk-javascript#readme",
+  "keywords": [
+    "events",
+    "cloudevents",
+    "sdk",
+    "javascript",
+    "cncf"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cloudevents-sdk",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudevents/sdk-javascript.git"
+  },
+  "scripts": {
+    "bdd": "cucumber-js ./test/bdd/feature -r ./test/bdd/step",
+    "coverage-publish": "istanbul cover -x 'test/**/*.js' _mocha --report lcovonly -- -C test/**/*.js -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage",
+    "test": "istanbul cover -x 'test/**/*.js' _mocha -- -C test/**/*.js"
+  },
+  "version": "1.0.0"
+}
